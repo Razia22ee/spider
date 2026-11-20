@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --color-bg: #141611;
+  --color-surface: #1e211c;
+  --color-surface-2: #282b24;
+  --color-line: #3c4036;
+  --color-fg: #f4f1e8;
+  --color-muted: #a7a89c;
+  --color-faint: #74776c;
+  --color-copper: #e09a4f;
+  --color-copper-ink: #24180c;
+  --color-sage: #a3be8c;
+  --color-sage-ink: #16210f;
+  --color-clay: #e08b78;
+  --color-clay-ink: #2a1210;
+  --radius-md: 0.75rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+details[open] .ns-chev {
+  transform: rotate(180deg);
+}
+
+.ns-chev {
+  transition: transform 160ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

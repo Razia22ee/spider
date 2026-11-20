@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+venv/
+logs/
+downloads/
+*.session
+client_secret*.json
+token.json
+.env
+data/*.lock
+data/*.tmp
+.DS_Store

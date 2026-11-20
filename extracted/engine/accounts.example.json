@@ -1,0 +1,22 @@
+{
+  "comment": "Examples only. Put the arrays into GitHub Secrets. Never commit real tokens or passwords.",
+  "GDRIVE_ACCOUNTS_JSON": [
+    {
+      "name": "gdrive-1",
+      "client_id": "YOUR_ID.apps.googleusercontent.com",
+      "client_secret": "YOUR_CLIENT_SECRET",
+      "refresh_token": "YOUR_REFRESH_TOKEN",
+      "folder_id": "",
+      "max_file_bytes": null
+    }
+  ],
+  "MEGA_ACCOUNTS_JSON": [
+    {
+      "name": "mega-1",
+      "email": "backup@example.com",
+      "password": "YOUR_MEGA_PASSWORD",
+      "folder": "Nightshift",
+      "max_file_bytes": null
+    }
+  ]
+}
